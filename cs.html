@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+    <div class="tout">
+     <div class="a">
+
+                 <div class="one">
+                      <div class="mune">
+                          <ul>
+                               <li>
+                                 HOME
+                               </li>
+                  
+                              <li>SERVIS</li>
+                             <li><img src="./fb.png" alt=""></li>
+                             <li><img  class="logo" src="./apale .png" alt=""></li>
+                             <li><img src="./ig.png" alt=""></li> 
+                                <li>ABOUT US</li>
+                                             <li>CONTACT US</li>
+                          </ul>
+                     </div>
+                  
+                 </div>
+
+     </div>
+     <div class="b">
+                           
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images1.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images2.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+     </div>
+     <div class="c">
+         <div class="produit">
+
+        <div class="imgbox">
+             <img src="iphone-12-pro-family-hero.jpg" alt="A">
+        </div>
+        <div class="text">
+            <h2>kkkkkkkkkkkkkkk <span>ttttttt</span> </h2>
+            <div class="price">55.55§</div>
+            <label for=""> size</label>
+       <ul>
+           <li>1</li>
+           <li>2</li>
+           <li>3</li>
+           <li>4</li>
+           <li>5</li>
+       </ul>
+       <label for=""> color</label>
+       <ul class="colore">
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ul>
+<a href=""> acheter</a>
+
+        </div>
+
+
+
+    </div>
+
+
+
+     </div>
+     <div class="d">
+         
+        <div class="card">
+            <div class="imgBx">
+                <img src="./iphone-12-pro-max-frandroid-2020.png" alt="">
+    
+            </div>
+            <div class="contentBx">
+                <h3>iphone 12 Pro Max</h3>
+                <h2 class="price">1239.<small>39</small> $</h2>
+                <a href="#" class="acheter">Acheter</a>
+        
+            </div>
+         </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="./iphone-12-pro-max-frandroid-2020.png" alt="">
+        
+                </div>
+                <div class="contentBx">
+                    <h3>iphone 12 Pro Max</h3>
+                    <h2 class="price">1239.<small>39</small> $</h2>
+                    <a href="#" class="acheter">Acheter</a>
+            
+                </div>
+    
+        </div>
+       
+        <div class="card">
+            <div class="imgBx">
+                <img src="./iphone-12-pro-max-frandroid-2020.png" alt="">
+    
+            </div>
+            <div class="contentBx">
+                <h3>iphone 12 Pro Max</h3>
+                <h2 class="price">1239.<small>39</small> $</h2>
+                <a href="#" class="acheter">Acheter</a>
+        
+            </div> </div>
+    </div>
+     <div class="e">5</div>
+     
+
+    </div>
+</body>
+</html>
